@@ -1,0 +1,9 @@
+.navigation {
+    padding: 1rem;
+    background-color: aquamarine;
+    display: flex;
+    gap: 2rem;
+}
+.navigation a.active {
+    font-weight: bold;
+}
