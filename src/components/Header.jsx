@@ -1,6 +1,7 @@
 import { useLocation } from 'react-router';
 import LogoutButton from '../components/LogoutButton';
 import Navigation from './Navigation';
+import './header.scss'
 
 export default function Header() {
     const location = useLocation();
@@ -11,9 +12,8 @@ export default function Header() {
     return location.pathname !== "/login" ? (
 
         <header>
-            <h1>My App</h1>
-            <Navigation />
             <LogoutButton />
+            <Navigation />
         </header>
     ) : null
 

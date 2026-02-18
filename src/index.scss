@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -5,7 +12,7 @@
 
   color-scheme: light dark;
   color: light-dark(#213547 rgba(255, 255, 255, 0.87));
-  background-color: light-dark(white, #242424);
+  background-color: light-dark(white, #003147);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,15 +34,23 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  width: 410px;
+  height: 830px;
+  background-color: aquamarine;
+  padding: 0;
 }
 
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   text-align: center;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
 }
 
 

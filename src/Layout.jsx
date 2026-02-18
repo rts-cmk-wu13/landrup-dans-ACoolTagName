@@ -9,10 +9,10 @@ function Layout() {
 
   return (
     <>
-      <Header />
       <main>
         <Outlet />
       </main>
+      <Header />
       <footer><small>© 2024 My App</small></footer>
     </>
   )

@@ -1,9 +1,21 @@
-.navigation {
+/*.navigation {
+    margin: 0;
     padding: 1rem;
-    background-color: aquamarine;
+    background-color: #E9E9E9;
     display: flex;
     gap: 2rem;
 }
 .navigation a.active {
+    color: black;
     font-weight: bold;
+}
+
+.navigation a {
+  font-weight: 500;
+  color: #6F6F6F;
+  text-decoration: inherit;
+}
+
+.navigation a:hover {
+  color: light-dark(#6F6F6F, #3F3F3F);
 }

@@ -53,7 +53,7 @@ export default function Login() {
                 <input type="password" id="password" name="password" />
             </div>
             {error && (<div>{error}</div>)}
-            <button type="submit">Log in</button>
+            <button type="submit">Log ind</button>
         </Form>
     )
 }

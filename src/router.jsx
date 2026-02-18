@@ -2,10 +2,13 @@ import { createBrowserRouter } from "react-router";
 import Layout from "./Layout";
 import Home from "./pages/Home"
 import List from "./pages/List";
+import Activities from "./pages/Activities";
 import Detail from "./pages/Detail";
+import Activity from "./pages/Activity";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import { getUser, getUsers } from "./uitlities/typicode";
+import { getActivity, getActivities } from "./uitlities/activities";
 import Loading from "./components/Loading";
 import { ErrorBoundary } from "./components/Error";
 import { handleSubmit } from "./uitlities/actions";
@@ -39,6 +42,23 @@ const router = createBrowserRouter([
                         <Detail />
                     </RequireAuth>),
                 loader: getUser
+            },
+            {
+                path: "Activities",
+                element: (
+                    <RequireAuth>
+                        <Activities />
+                    </RequireAuth>
+                ),
+                loader: getActivities
+            },
+            {
+                path: "Activities/:id",
+                element: (
+                    <RequireAuth>
+                        <Activity />
+                    </RequireAuth>),
+                loader: getActivity
             },
             {
                 path: "contact",

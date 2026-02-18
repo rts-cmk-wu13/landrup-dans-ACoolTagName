@@ -1,14 +1,16 @@
 import { NavLink } from 'react-router';
 import './navigation.scss'
+import { CiHome } from "react-icons/ci";
+import { FaListUl } from "react-icons/fa";
+import { IoMdPerson } from "react-icons/io";
 
 export default function Navigation() {
 
     return (
         <nav className="navigation">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/list">List</NavLink>
-            <NavLink to="/contact">Contact</NavLink>
-            <NavLink to="/about">About</NavLink>
+            <NavLink to="/"><CiHome className="home-icon" />Home</NavLink>
+            <NavLink to="/list"><FaListUl className="list-icon" />List</NavLink>
+            <NavLink to="/Profile"><IoMdPerson className="profile-icon" />Profil</NavLink>
         </nav>
     )
 }
