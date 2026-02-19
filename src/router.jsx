@@ -6,7 +6,6 @@ import List from "./pages/List";
 import Activities from "./pages/Activities";
 import Detail from "./pages/Detail";
 import Activity from "./pages/Activity";
-import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
 /*-----PAGES-----*/
@@ -19,6 +18,7 @@ import { handleSubmit } from "./uitlities/actions";
 import Loading from "./components/Loading";
 import { ErrorBoundary } from "./components/Error";
 import RequireAuth from "./components/RequireAuth";
+import Contact from "./components/Contact";
 /*-----COMPONENTS-----*/
 
 

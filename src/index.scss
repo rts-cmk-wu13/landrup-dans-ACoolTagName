@@ -1,12 +1,14 @@
 @import url(style/home.scss);
 @import url(style/navigation.scss);
 @import url(style/header.scss);
+@import url(style/Contact.scss);
 
 * {
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
   font-size: 16px;
+  font-weight: normal;
 }
 
 
