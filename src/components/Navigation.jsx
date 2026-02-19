@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router';
-import './navigation.scss'
 import { CiHome } from "react-icons/ci";
 import { FaListUl } from "react-icons/fa";
 import { IoMdPerson } from "react-icons/io";
