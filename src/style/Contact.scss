@@ -1,0 +1,53 @@
+article {
+    width: 86%;
+
+    form {
+        width: 100%;
+
+        div {
+
+            label,
+            input,
+            textarea,
+            button {
+                width: 100%;
+            }
+
+            label,
+            input,
+            textarea,
+            button {
+                margin: 0.8rem 0;
+                color: #999999;
+                background-color: #E9E9E9;
+            }
+
+            label {
+                display: none;
+            }
+
+            input {
+                height: 2.8rem;
+            }
+
+            textarea {
+                height: 7rem;
+            }
+        }
+
+        button {
+            color: #003147;
+        }
+    }
+
+    .img-frame {
+        margin: 2rem 0 2rem 0;
+        width: 100%;
+
+        img {
+            width: 100%;
+            color: #E0E0E0;
+
+        }
+    }
+}
