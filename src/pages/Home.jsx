@@ -1,4 +1,8 @@
 import { Link, NavLink } from 'react-router';
+import Contact from '../components/Contact';
+import LogoutButton from '../components/LogoutButton';
+import { RiArrowDownWideFill } from "react-icons/ri";
+
 
 export default function Home() {
 
@@ -7,6 +11,13 @@ export default function Home() {
             <section className="hero-image">
                 <h1>Home</h1>
                 <Link to="/about">Go to About</Link>
+                <div className='utinsils'>
+                    <LogoutButton />
+                    <div className='img-frame'>
+                        <img src="src/assets/Vector.svg" alt="" />
+                    </div>
+                </div>
+
             </section>
             <section className="activities">
                 <h2>Vores Holdtyper</h2>
@@ -45,9 +56,9 @@ export default function Home() {
             <section className="ratings">
 
             </section>
-            <section className="contact">
-
-            </section>
+            <footer className="contact">
+                <Contact />
+            </footer>
         </>
     )
 }
