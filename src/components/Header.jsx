@@ -11,7 +11,6 @@ export default function Header() {
     return location.pathname !== "/login" ? (
 
         <header>
-            <LogoutButton />
             <Navigation />
         </header>
     ) : null

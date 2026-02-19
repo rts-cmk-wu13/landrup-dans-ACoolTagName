@@ -8,7 +8,7 @@ export default function Navigation() {
     return (
         <nav className="navigation">
             <NavLink to="/"><CiHome className="home-icon" />Home</NavLink>
-            <NavLink to="/list"><FaListUl className="list-icon" />List</NavLink>
+            <NavLink to="/activities"><FaListUl className="list-icon" />activities</NavLink>
             <NavLink to="/Profile"><IoMdPerson className="profile-icon" />Profil</NavLink>
         </nav>
     )
