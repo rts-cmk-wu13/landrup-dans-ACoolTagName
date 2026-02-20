@@ -1,10 +1,13 @@
 import { Link, NavLink } from 'react-router';
 import Contact from '../components/Contact';
 import LogoutButton from '../components/LogoutButton';
-import { RiArrowDownWideFill } from "react-icons/ri";
 
 
 export default function Home() {
+
+
+
+
 
     return (
         <>
@@ -20,6 +23,9 @@ export default function Home() {
 
             </section>
             <section className="activities">
+
+
+
                 <h2>Vores Holdtyper</h2>
                 <div className='activity-cards'>
                     <h2>Boernedans</h2>

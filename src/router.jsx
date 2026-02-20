@@ -3,15 +3,15 @@ import Layout from "./Layout";
 /*-----PAGES-----*/
 import Home from "./pages/Home"
 import List from "./pages/List";
-import Activities from "./pages/Activities";
 import Detail from "./pages/Detail";
+import Activities from "./pages/Activities";
 import Activity from "./pages/Activity";
 import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
 /*-----PAGES-----*/
 /*-----UTILITIES-----*/
 import { getUser, getUsers } from "./uitlities/typicode";
-import { getActivity, getActivities } from "./uitlities/activities";
+import { getActivity, getActivities } from "./uitlities/Activities";
 import { handleSubmit } from "./uitlities/actions";
 /*-----UTILITIES-----*/
 /*-----COMPONENTS-----*/

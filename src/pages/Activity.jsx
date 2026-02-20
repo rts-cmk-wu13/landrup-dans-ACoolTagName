@@ -1,12 +1,12 @@
 import { useLoaderData } from "react-router"
 
-export default function Detail() {
+export default function Activity() {
     const user = useLoaderData();
 
 
     return (
         <>
-            <h1>Activity Detail</h1>
+            <h1>Activity Activity</h1>
             <p>Name: {user.name}</p>
             <p>Email: {user.email}</p>
             <p>Phone: {user.phone}</p>
