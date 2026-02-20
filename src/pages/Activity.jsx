@@ -6,18 +6,13 @@ export default function Activity() {
 
     return (
         <>
-            <h1>Activity Activity</h1>
-            <p>Name: {user.name}</p>
-            <p>Email: {user.email}</p>
-            <p>Phone: {user.phone}</p>
-            <p>Website: {user.website}</p>
-            <table>
-                <tbody>
-                    <tr><th>Name:</th><td>{user.name}</td></tr>
-                    <tr><th>Email:</th><td>{user.email}</td></tr>
-                    <tr><th>Phone:</th><td>{user.phone}</td></tr>
-                    <tr><th>Website:</th><td>{user.website}</td></tr></tbody>
-            </table>
+            <article>
+                <img src="" alt="" />
+                <button></button>
+                <h1></h1>
+                <p>nr+år</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget elementum lorem nulla vitae felis auctor pretium suspendisse et. Condimentum fringilla odio vitae interdum adipiscing odio volutpat. Faucibus gravida quis nisi, purus morbi leo nulla a. Mattis tincidunt phasellus enim, egestas non ultrices.</p>
+            </article>
         </>
     )
 } 

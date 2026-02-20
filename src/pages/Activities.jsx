@@ -12,6 +12,9 @@ export default function Activities() {
 
 
     return (
+    <>
+        /* --- SEACHEFIELD --- */
+        <h1>Aktiviteter</h1>
 
         <ul>
             {activities.map(activity => (
@@ -20,5 +23,6 @@ export default function Activities() {
                 </li>
             ))}
         </ul>
+    </>
     )
 }
