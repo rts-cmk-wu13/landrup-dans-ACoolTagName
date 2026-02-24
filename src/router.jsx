@@ -20,8 +20,29 @@ import { ErrorBoundary } from "./components/Error";
 import RequireAuth from "./components/RequireAuth";
 import Contact from "./components/Contact";
 /*-----COMPONENTS-----*/
+/* fra time sage*/
+import { createBrowserRouter } from "react-router";
+import RequireAuth from "./components/RequireAuth";
+import { loginAction } from "./actions/loginAction";
+import { customerAction } from "./actions/customerAction";
+import { projectAction } from "./actions/projectAction";
+import { taskAction } from "./actions/taskAction";
+import { customersLoader, singleCustomerLoader } from "./loaders/customerLoader";
+import { projectsLoader, singleProjectLoader } from "./loaders/projectLoader";
+import { tasksLoader, singleTaskLoader } from "./loaders/taskLoader";
+import { usersLoader, singleUserLoader } from "./loaders/userLoader";
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
+import Kunder from "./pages/Kunder";
+import Sager from "./pages/Sager";
+import KundeDetalier from "./pages/KundeDetalier";
+import SagDetalier from "./pages/SagDetalier";
+import OpgaveDetalier from "./pages/OpgaveDetalier";
+import Brugere from "./pages/Brugere";
+import BrugerDetalier from "./pages/BrugerDetalier";
+import { logoutAction } from "./actions/loginAction";
 
-
+/* fra time sage*/
 const router = createBrowserRouter([
     {
         path: "/",
@@ -31,7 +52,8 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Home />
+                element: <Home />,
+                action: loginAction
             },
             {
                 path: "list",

@@ -1,0 +1,33 @@
+.toggle-switch {
+  display: inline-block;
+  cursor: pointer;
+}
+.toggle-switch-input {
+  display: none;
+}
+.toggle-switch-slider {
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+  background: #ccc;
+  border-radius: 22px;
+  position: relative;
+  transition: background 0.3s;
+}
+.toggle-switch-slider.dark {
+  background: #333;
+}
+.toggle-switch-knob {
+  position: absolute;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  transition: left 0.3s;
+  left: 2px;
+}
+.toggle-switch-input:checked + .toggle-switch-slider .toggle-switch-knob {
+  left: 20px;
+}
