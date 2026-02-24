@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router";
-import RequireAuth from "./components/RequireAuth";
 import { loginAction } from "./actions/loginAction";
 /*import { customerAction } from "./actions/customerAction";*/
 import { projectAction } from "./actions/projectAction";
@@ -9,7 +8,6 @@ import { projectsLoader, singleProjectLoader } from "./loaders/activityLoader";
 /*import { tasksLoader, singleTaskLoader } from "./loaders/taskLoader";*/
 import { usersLoader, singleUserLoader } from "./loaders/userLoader";
 import Layout from "./components/Layout";
-import Home from "./pages/Home";
 /*import Kunder from "./pages/Kunder";*/
 import Sager from "./pages/ActivityList";
 /*import KundeDetalier from "./pages/KundeDetalier";*/
@@ -24,16 +22,14 @@ import UsersList from "./pages/UsersList";
 /* transfterred */
 
 
-import { createBrowserRouter } from "react-router";
-import Layout from "./Layout";
 /*-----PAGES-----*/
-import Home from "./pages/Home"
+/*import Home from "./pages/Home"
 import List from "./pages/List";
 import Detail from "./pages/Detail";
 import Activities from "./pages/Activities";
 import Activity from "./pages/Activity";
 import NotFound from "./pages/NotFound";
-import Login from "./pages/Login";
+import Login from "./pages/Login";*/
 /*-----PAGES-----*/
 /*-----UTILITIES-----*/
 import { getUser, getUsers } from "./uitlities/typicode";
@@ -44,7 +40,7 @@ import { handleSubmit } from "./uitlities/contactActions";
 import Loading from "./components/Loading";
 import { ErrorBoundary } from "./components/Error";
 import RequireAuth from "./components/RequireAuth";
-import Contact from "./components/Contact";
+/*import Contact from "./components/Contact";*/
 
 
 
