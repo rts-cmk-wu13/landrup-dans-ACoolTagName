@@ -39,7 +39,9 @@ import { handleSubmit } from "./uitlities/contactActions";
 /*-----COMPONENTS-----*/
 import Loading from "./components/Loading";
 import { ErrorBoundary } from "./components/Error";
-import RequireAuth from "./components/RequireAuth";
+import RequireAuth from "../src test/components/RequireAuth";
+import Activities from "./pages/ActivityList";
+import ActivityDetalier from "./pages/ActivityDetalier";
 /*import Contact from "./components/Contact";*/
 
 
@@ -70,13 +72,13 @@ const router = createBrowserRouter([
             },*/
             {
                 path: "/activities",
-                element: <RequireAuth><Sager /></RequireAuth>,
+                element: <RequireAuth><Activities /></RequireAuth>,
                 loader: projectsLoader,
                 action: projectAction
             },
             {
                 path: "/activities/:projectId",
-                element: <RequireAuth><SagDetalier /></RequireAuth>,
+                element: <RequireAuth><ActivityDetalier /></RequireAuth>,
                 loader: singleProjectLoader,
                 action: taskAction
             },/*
