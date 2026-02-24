@@ -6,7 +6,7 @@ export async function usersLoader() {
     throw new Error("Unauthorized");
   }
 
-  const response = await fetch(`https://timesag-backend.netlify.app/users`, {
+  const response = await fetch(`ttp://localhost:4000/api/v1/testimonials`, {
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${token}`
@@ -29,7 +29,7 @@ export async function singleUserLoader({params}) {
     throw new Error("Unauthorized");
   }
 const userId = params.userId;
-  const response = await fetch(`https://timesag-backend.netlify.app/users/${userId}`, {
+  const response = await fetch(`ttp://localhost:4000/api/v1/testimonials/${userId}`, {
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${token}`
@@ -51,7 +51,7 @@ export async function currentUserLoader() {
     throw new Error("Unauthorized");
   }
 
-  const response = await fetch(`https://timesag-backend.netlify.app/users/me`, {
+  const response = await fetch(`ttp://localhost:4000/api/v1/testimonials/me`, {
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${token}`
